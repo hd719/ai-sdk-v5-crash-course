@@ -55,7 +55,7 @@ Different model providers throw different errors. For instance, Anthropic will s
 
 ## Understanding Context Window Limitations
 
-So that is what a context window is: the total number of input and output tokens that the LLM can see at any one time.
+**So that is what a context window is: the total number of input and output tokens that the LLM can see at any one time**.
 
 Different models have different sizes of context windows which make them better at different things. Some models are relatively simple, but have large context windows. Some models are much smarter, but can see relatively less.
 

@@ -48,3 +48,35 @@ console.log(asXML);
 console.log('--------------------------------');
 console.log('JSON tokens:', tokenize(asJSON).length);
 console.log(asJSON);
+
+// Markdown tokens: 53
+// - [AI Hero](https://aihero.dev)
+// - [Total TypeScript](https://totaltypescript.com)
+// - [Matt Pocock](https://mattpocock.com)
+// - [Twitter](https://twitter.com/mattpocockuk)
+// --------------------------------
+// XML tokens: 77
+// <item url="https://aihero.dev" title="AI Hero"></item>
+// <item url="https://totaltypescript.com" title="Total TypeScript"></item>
+// <item url="https://mattpocock.com" title="Matt Pocock"></item>
+// <item url="https://twitter.com/mattpocockuk" title="Twitter"></item>
+// --------------------------------
+// JSON tokens: 103
+// [
+//   {
+//     "url": "https://aihero.dev",
+//     "title": "AI Hero"
+//   },
+//   {
+//     "url": "https://totaltypescript.com",
+//     "title": "Total TypeScript"
+//   },
+//   {
+//     "url": "https://mattpocock.com",
+//     "title": "Matt Pocock"
+//   },
+//   {
+//     "url": "https://twitter.com/mattpocockuk",
+//     "title": "Twitter"
+//   }
+// ]

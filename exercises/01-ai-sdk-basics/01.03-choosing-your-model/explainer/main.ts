@@ -2,11 +2,28 @@
 import { openai } from '@ai-sdk/openai';
 
 // Requires a GOOGLE_GENERATIVE_AI_API_KEY environment variable in .env
-import { google } from '@ai-sdk/google';
+// import { google } from '@ai-sdk/google';
 
 // Requires an ANTHROPIC_API_KEY environment variable in .env
-import { anthropic } from '@ai-sdk/anthropic';
+// import { anthropic } from '@ai-sdk/anthropic';
 
 const model = openai('gpt-4o-mini');
 
 console.dir(model, { depth: null });
+
+// Ex. output
+// OpenAIResponsesLanguageModel {
+//   specificationVersion: 'v2',
+//   supportedUrls: {
+//     'image/*': [ /^https?:\/\/.*$/ ],
+//     'application/pdf': [ /^https?:\/\/.*$/ ]
+//   },
+//   modelId: 'gpt-4o-mini',
+//   config: {
+//     provider: 'openai.responses',
+//     url: [Function: url],
+//     headers: [Function: getHeaders],
+//     fetch: undefined,
+//     fileIdPrefixes: [ 'file-' ]
+//   }
+// }

@@ -10,7 +10,9 @@ for await (const chunk of output.textStream) {
   process.stdout.write(chunk);
 }
 
-console.log(); // Empty log to separate the output from the usage
+for await (const chunk of output.textStream) {
+  process.stdout.write(chunk);
+}
 
-// TODO: Print the usage to the console
-TODO;
+console.log(); // Empty log to separate the output from the usage
+console.log(await output.usage);
